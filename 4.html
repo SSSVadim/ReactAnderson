@@ -30,14 +30,14 @@
 
 		function Inner(props){
 			return (
-				<div className={"inner1 " + props.className}>{props.children}</div>
+				<div className={props.className}>{props.children}</div>
 			);
 		}
 
 		const element = 			
 				<Wrapper>
 					<h1>Это обертка для элементов на странице</h1>	
-					<Inner>
+					<Inner className="inner1">
 						<h2 className="inner__header">Заголовок внутреннего элемента 1</h2>
 					</Inner>	
 					<Inner className="inner2">
