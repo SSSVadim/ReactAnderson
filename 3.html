@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="3.css">
+	<title>React 3</title>
+</head>
+
+<body>
+	<div id="root"></div>
+
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-alpha-43f4cc160/umd/react.development.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0-alpha-43f4cc160/umd/react-dom.development.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+	<script type="text/babel">
+
+		const rootElement = document.querySelector('#root');
+
+		const element = 
+			<div className="wrapper">
+				<h1>Это обертка для элементов на странице</h1>
+				<div className="inner1">
+					<h2 className="inner__header">Заголовок внутреннего элемента 1</h2>
+				</div>
+				<div className="inner2">
+					<h2 className="inner__header">Заголовок внутреннего элемента 2</h2>
+				</div>
+			</div>;
+
+		ReactDOM.render(element, rootElement);
+
+
+	</script>
+</body>
+
+</html>
